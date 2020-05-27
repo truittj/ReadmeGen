@@ -1,0 +1,26 @@
+{
+  "name": "readmegen",
+  "version": "1.0.0",
+  "description": "This is a terminal based README Generator ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/truittj/ReadmeGen.git"
+  },
+  "keywords": [
+    "README"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/truittj/ReadmeGen/issues"
+  },
+  "homepage": "https://github.com/truittj/ReadmeGen#readme",
+  "dependencies": {
+    "fs": "0.0.1-security",
+    "inquirer": "^7.1.0"
+  }
+}
