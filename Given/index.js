@@ -46,18 +46,23 @@ function userPrompt () {
 
         {
             type: "input",
-            message: "Who else gets credit",
+            message: "Contributors",
             name: "credits"
         },
 
         {
             type: "list",
             message: "Select your license:",
-            name: "license",
+            name: "license", 
             choices: ["None", "Public domain", "GPL", "LGPL", "MIT/X11", "BSD", "Apache", "Eclipse", "Mozilla", "MS Premissive", "MS Community", "MS Reference"],
-            default: "None"
+            default: " "
         },
-
+        {
+            type: "input",
+            message: "Other Licenses:",
+            name: "oL",
+            default: " "
+        },
         {
             type: "list",
             message: "Select the color of Badge:",
@@ -69,37 +74,48 @@ function userPrompt () {
     }
 
 
-
     function generate (answers) 
     {
       return `
-# ${answers.userTitle} ![Badge](https://img.shields.io/badge/ReadMe${answers.userTitle}-${answers.version}-${answers.badgeColor})
-
+[![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-v2.0%20adopted-ff69b4.svg)](code_of_conduct.md)
+![Badge](https://img.shields.io/badge/ReadMe${answers.userTitle}-${answers.version}-${answers.badgeColor})
+# ${answers.userTitle}
 
 ## Description
+
 ${answers.disciption}
 
+## Current Version 
+
+${answers.version}
+
 ## Table of Contents
+
     * Installation
-    * Current Version 
+    * Usage
     * License
     * Contributing
     * User GitHub profile picture
     * User GitHub email
                 
 ## Installation
+
 ${answers.install}
 
-## Current Version 
-${answers.version}
+##Usage
+
+${answers.usage}
 
 ## License
-${answers.license}
+
+${answers.license} ${answers.oL}
 
 ## Contributing
+
 ${answers.credits}
 
 ## Contact Information
+
 ${answers.disciption} @${answers.gitHubID}
 `
     };

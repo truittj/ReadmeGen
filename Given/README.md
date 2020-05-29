@@ -1,29 +1,41 @@
 
+[![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-v2.0%20adopted-ff69b4.svg)](code_of_conduct.md)
+![Badge](https://img.shields.io/badge/ReadMejoel-joel-blue)
 # joel
-[![Badge](https://img.shields.io/badge/ReadMejoel-joel-blue)]
 
 ## Description
+
+jdks
+
+## Current Version 
+
 joel
 
 ## Table of Contents
+
     * Installation
-    * Current Version 
+    * Usage
     * License
     * Contributing
     * User GitHub profile picture
     * User GitHub email
                 
 ## Installation
-joel
 
-## Current Version 
-joel
+jsdlk
+
+##Usage
+
+lsdk
 
 ## License
-None
+
+None  
 
 ## Contributing
-jeole
+
+lskdj
 
 ## Contact Information
-joel @joeol
+
+jdks @truittj
