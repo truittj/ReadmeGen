@@ -124,8 +124,9 @@ ${answers.questions}
 
 ## Contact Information
 
+![gitHub Avatar](${answers.avatar_url} | width=25)
 https://github.com/${answers.gitHubID}
-![gitHub Avatar](${answers.avatar_url})
+
 
 `
     };
