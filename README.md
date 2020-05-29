@@ -1,15 +1,15 @@
 
 [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-v2.0%20adopted-ff69b4.svg)](code_of_conduct.md)
-![Badge](https://img.shields.io/badge/ReadMejoel-joel-blue)
-# joel
+![Badge](https://img.shields.io/badge/README-1.0-blue)
+# Good README Generator Using Node.js
 
 ## Description
 
-jdks
+This is a Node.js based platform that utilizes fs, axios, util, and inquirer to generate a README.md file. 
 
 ## Current Version 
 
-joel
+1.0
 
 ## Table of Contents
 
@@ -22,11 +22,11 @@ joel
                 
 ## Installation
 
-jsdlk
+In order to run this, install mdn axios and inquirer. Use [mdn i axios && mdn i inquirer]
 
-##Usage
+## Usage
 
-lsdk
+This is open source and open to the public
 
 ## License
 
@@ -34,8 +34,8 @@ None
 
 ## Contributing
 
-lskdj
+NA
 
 ## Contact Information
 
-jdks @truittj
+https://github.com/truittj
