@@ -73,8 +73,8 @@ function userPrompt () {
     function generate (answers) 
     {
       return `
-# ${answers.userTitle}
-[![Badge](https://img.shields.io/badge/ReadMe${answers.userTitle}-${answers.version}-${answers.badgeColor})]
+# ${answers.userTitle} ![Badge](https://img.shields.io/badge/ReadMe${answers.userTitle}-${answers.version}-${answers.badgeColor})
+
 
 ## Description
 ${answers.disciption}
