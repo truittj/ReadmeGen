@@ -72,10 +72,10 @@ function userPrompt () {
         }
         ]);
     }
+const { data } = await axios.get (`https://api.github.com/users/${gitHubID}/repos?per_page=100`);
 
 
-    function generate (answers) 
-    {
+    function generate (answers) {
       return `
 [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-v2.0%20adopted-ff69b4.svg)](code_of_conduct.md)
 ![Badge](https://img.shields.io/badge/ReadMe${answers.userTitle}-${answers.version}-${answers.badgeColor})
@@ -102,7 +102,7 @@ ${answers.version}
 
 ${answers.install}
 
-##Usage
+## Usage
 
 ${answers.usage}
 
@@ -116,7 +116,7 @@ ${answers.credits}
 
 ## Contact Information
 
-${answers.disciption} @${answers.gitHubID}
+https://github.com/truittj${answers.gitHubID}
 `
     };
 
@@ -134,11 +134,6 @@ ${answers.disciption} @${answers.gitHubID}
     });
 
     
-// function writeToFile(fileName, data) {
-
-
-
-// }
 
 // function init() {
 
