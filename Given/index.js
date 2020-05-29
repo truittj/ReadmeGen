@@ -115,7 +115,7 @@ ${answers.credits}
 
 ## Contact Information
 
-https://github.com/truittj${answers.gitHubID}
+https://github.com/${answers.gitHubID}
 `
     };
 

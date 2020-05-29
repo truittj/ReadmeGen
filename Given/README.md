@@ -1,7 +1,7 @@
 
 [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-v2.0%20adopted-ff69b4.svg)](code_of_conduct.md)
-![Badge](https://img.shields.io/badge/ReadMeReadMe-1.0-blue)
-# ReadMe
+![Badge](https://img.shields.io/badge/ReadMeReadME-1.0-blue)
+# ReadME
 
 ## Description
 
@@ -22,7 +22,7 @@ This is a demo
                 
 ## Installation
 
-Please install all components 
+Install all components
 
 ## Usage
 
@@ -30,7 +30,7 @@ Open Source
 
 ## License
 
-None NA
+Public domain NA
 
 ## Contributing
 
@@ -38,4 +38,4 @@ NA
 
 ## Contact Information
 
-https://github.com/truittjtruittj
+https://github.com/truittj
