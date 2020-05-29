@@ -1,13 +1,13 @@
 const inquirer = require('inquirer');
 const axios = require ('axios');
-const fs = require ('fs');  
-const generateMarkdown = require('./utils/generateMarkdown')
+const fs = require ('fs');
+const util = require("util");  
+//const generateMarkdown = require('./utils/generateMarkdown')
 
 const writeFileAsync = util.promisify(fs.writeFile);
 
 function userPrompt () {
-    inquirer
-    .prompt([
+    return inquirer.prompt([
         {
             type: "input",
             message: "What is the title of your project?",
@@ -27,8 +27,8 @@ function userPrompt () {
         },
 
         {
-            type: "editor",
-            message: "Provide a discription to your project (once the editor launches, type your message followed by hitting the ESC key, then :wq):",
+            type: "input",
+            message: "Provide a discription to your project:",
             name: "disciption"
         },
 
@@ -54,7 +54,8 @@ function userPrompt () {
             type: "list",
             message: "Select your license:",
             name: "license",
-            choices: ["None", "Public domain", "GPL", "LGPL", "MIT/X11", "BSD", "Apache", "Eclipse", "Mozilla", "MS Premissive", "MS Community", "MS Reference"]
+            choices: ["None", "Public domain", "GPL", "LGPL", "MIT/X11", "BSD", "Apache", "Eclipse", "Mozilla", "MS Premissive", "MS Community", "MS Reference"],
+            default: "None"
         },
 
         {
@@ -62,62 +63,73 @@ function userPrompt () {
             message: "Select the color of Badge:",
             choices: ["brightgreen", "green", "yellowgreen", "yellow", "orange", "red", "blue", "lightgrey", "blueviolet", "ff69b4", "9cf"],
             default: "blue",
-            name: "badgeColor",
+            name: "badgeColor"
         }
-        ])
-    };
+        ]);
+    }
 
-
+    function badge (data) {
+        return axios
+    .get("https://img.shields.io/badge/ReadMe" + data.userTitle + "-" + data.version + "-" + badgeColor)
+    .then(function(res) {
+      console.log(res);
+    })};
 
     function generate (answers) 
     {
+        
       return `
-            Alt-#${answers.userTitle} ${'![Badge](https://img.shields.io/badge/ReadMe${answers.userTitle}-${answers.version}-${answers.badgeColor})'}
-            
-            ###Description
-                ${answers.disciption}
+# ${answers.userTitle} ${badge()}
+## Description
+${answers.disciption}
 
-           ###Table of Contents
-                * Installation
-                * Installiation Instructions and Current Version 
-                * License
-                * Contributing
-                * Tests
-                * Questions
-                * User GitHub profile picture
-                * User GitHub email
+## Table of Contents
+    * Installation
+    * Current Version 
+    * License
+    * Contributing
+    * User GitHub profile picture
+    * User GitHub email
                 
-            ###Installation
-            ${answers.disciption}
+## Installation
+${answers.install}
 
-            ###Installiation Instructions and Current Version 
-            ${answers.disciption}
+## Current Version 
+${answers.version}
 
-            ###License
-            ${answers.license}
+## License
+${answers.license}
 
-            ###Contributing
-            ${answers.disciption}
-            
-            ###Tests
-            ${answers.disciption}
+## Contributing
+${answers.credits}
 
-            ###Questions
-            ${answers.disciption}
+## Contact Information
+${answers.disciption} @${answers.gitHubID}
+`
+    };
 
-            ###Contact Information
-            ${answers.disciption} ${answers.disciption}
+    userPrompt()
+    .then(function(answers) {
+      const md = generate(answers);
+  
+      return writeFileAsync("README.md", md);
+    })
+    .then(function() {
+      console.log("Successfully wrote to README.md");
+    })
+    .catch(function(err) {
+      console.log(err);
+    });
+
+    
+// function writeToFile(fileName, data) {
 
 
-      `
 
-function writeToFile(fileName, data) {
+// }
 
+// function init() {
 
-}
+// }
 
-function init() {
-
-}
-
-init();
+// init();
