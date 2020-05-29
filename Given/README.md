@@ -22,7 +22,7 @@ undefined
                 
 ## Installation
 
-npm i
+open source
 
 ## Usage
 
@@ -30,7 +30,7 @@ open source
 
 ## License
 
-Public domain  
+None  
 
 ## Contributing
 
@@ -42,5 +42,5 @@ undefined
 ## Contact Information
 
 https://github.com/truittj
-[! gitHub Avatar] (https://avatars1.githubusercontent.com/u/63681296?v=4)
+![gitHub Avatar](https://avatars1.githubusercontent.com/u/63681296?v=4)
 

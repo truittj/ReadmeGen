@@ -125,7 +125,7 @@ ${answers.questions}
 ## Contact Information
 
 https://github.com/${answers.gitHubID}
-[! gitHub Avatar] (${answers.avatar_url})
+![gitHub Avatar](${answers.avatar_url})
 
 `
     };
