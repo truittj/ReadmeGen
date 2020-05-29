@@ -1,11 +1,11 @@
 
 [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-v2.0%20adopted-ff69b4.svg)](code_of_conduct.md)
-![Badge](https://img.shields.io/badge/ReadMeThis is a demo title-1.0-lightgrey)
-# This is a demo title
+![Badge](https://img.shields.io/badge/ReadMeReadMe-1.0-blue)
+# ReadMe
 
 ## Description
 
-This is a demo of the functionalility 
+This is a demo
 
 ## Current Version 
 
@@ -22,7 +22,7 @@ This is a demo of the functionalility
                 
 ## Installation
 
-Please install all resources
+Please install all components 
 
 ## Usage
 
@@ -30,7 +30,7 @@ Open Source
 
 ## License
 
-Public domain  
+None NA
 
 ## Contributing
 
