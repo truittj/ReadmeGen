@@ -124,7 +124,7 @@ ${answers.questions}
 
 ## Contact Information
 
-![gitHub Avatar](${answers.avatar_url} | width=25)
+<img src="${answers.avatar_url}" alt="gitHub Avatar" width="25%">
 https://github.com/${answers.gitHubID}
 
 

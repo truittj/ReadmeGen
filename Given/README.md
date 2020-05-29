@@ -1,7 +1,7 @@
 
 [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-v2.0%20adopted-ff69b4.svg)](code_of_conduct.md)
-![Badge](https://img.shields.io/badge/ReadMedemo-undefined-undefined)
-# demo
+![Badge](https://img.shields.io/badge/ReadMeDemo-undefined-undefined)
+# Demo
 
 ## Description
 
@@ -22,11 +22,11 @@ undefined
                 
 ## Installation
 
-use npm i for all items
+npm i
 
 ## Usage
 
-Open Source
+open source
 
 ## License
 
@@ -34,14 +34,14 @@ Public domain
 
 ## Contributing
 
-NA
+na
 
 ##Questions
 undefined
 
 ## Contact Information
 
-![gitHub Avatar](https://avatars1.githubusercontent.com/u/63681296?v=4 | width=25)
+<img src="https://avatars1.githubusercontent.com/u/63681296?v=4" alt="gitHub Avatar" width="25%">
 https://github.com/truittj
 
 
