@@ -68,18 +68,14 @@ function userPrompt () {
         ]);
     }
 
-    function badge (data) {
-        return axios
-    .get("https://img.shields.io/badge/ReadMe" + data.userTitle + "-" + data.version + "-" + badgeColor)
-    .then(function(res) {
-      console.log(res);
-    })};
+
 
     function generate (answers) 
     {
-        
       return `
-# ${answers.userTitle} ${badge()}
+# ${answers.userTitle}
+[![Badge](https://img.shields.io/badge/ReadMe${answers.userTitle}-${answers.version}-${answers.badgeColor})]
+
 ## Description
 ${answers.disciption}
 
