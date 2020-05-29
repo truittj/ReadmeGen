@@ -22,11 +22,11 @@ undefined
                 
 ## Installation
 
-npm i
+Use npm i on Axios and inquirer
 
 ## Usage
 
-open source
+Open Source
 
 ## License
 
@@ -34,7 +34,7 @@ Public domain
 
 ## Contributing
 
-na
+NA
 
 ##Questions
 undefined
