@@ -64,6 +64,12 @@ function userPrompt () {
             default: " "
         },
         {
+        type: "input",
+        message: "Questions:",
+        name: "questions",
+        default: " "
+        },
+        {
             type: "list",
             message: "Select the color of Badge:",
             choices: ["brightgreen", "green", "yellowgreen", "yellow", "orange", "red", "blue", "lightgrey", "blueviolet", "ff69b4", "9cf"],
@@ -112,6 +118,9 @@ ${answers.license} ${answers.oL}
 ## Contributing
 
 ${answers.credits}
+
+##Questions
+${answers.questions}
 
 ## Contact Information
 
