@@ -1,15 +1,15 @@
 
 [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-v2.0%20adopted-ff69b4.svg)](code_of_conduct.md)
-![Badge](https://img.shields.io/badge/README-v1.0-blue)
-# Good README Generator Using Node.js
+![Badge](https://img.shields.io/badge/ReadMeREADME-undefined-undefined)
+# README
 
 ## Description
 
-This is a Node.js based platform that utilizes fs, axios, util, and inquirer to generate a README.md file. 
+undefined
 
 ## Current Version 
 
-1.0
+undefined
 
 ## Table of Contents
 
@@ -22,11 +22,11 @@ This is a Node.js based platform that utilizes fs, axios, util, and inquirer to 
                 
 ## Installation
 
-In order to run this, install mdn axios and inquirer. Use [mdn i axios && mdn i inquirer]
+In order to run this, run npm i for axios and inquirer.
 
 ## Usage
 
-This is open source and open to the public
+This is open source
 
 ## License
 
@@ -36,6 +36,12 @@ None
 
 NA
 
+##Questions
+undefined
+
 ## Contact Information
 
+<img src="https://avatars1.githubusercontent.com/u/63681296?v=4" alt="gitHub Avatar" width="25%">
 https://github.com/truittj
+
+
