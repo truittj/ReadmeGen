@@ -125,14 +125,40 @@ ${answers.questions}
 ## Contact Information
 
 https://github.com/${answers.gitHubID}
+[! gitHub Avatar] (${answers.avatar_url})
+
 `
     };
-
+//0. grab inquirer response
     userPrompt()
-    .then(function(answers) {
-      const md = generate(answers);
-  
-      return writeFileAsync("README.md", md);
+    .then(function({gitHubID, install, credits, questions, oL, license, usage, version, description, userTitle}) {
+       
+        //1. get github via axios
+        const queryUrl = `https://api.github.com/users/${gitHubID}/repos?per_page=100`;
+        //pass everything thorugh the answers obj
+        var answers = {
+            userTitle : userTitle,
+            description : description,
+            verion : version,
+            usage : usage,
+            license : license,
+            oL : oL,
+            quetions : questions, 
+            credits : credits, 
+            install : install,
+            gitHubID : gitHubID,
+            queryUrl : queryUrl
+        };
+        axios.get(queryUrl).then(function(res) {
+            answers.avatar_url=res.data[0].owner.avatar_url;
+            return answers
+        })
+        .then(function(answers) {
+             //2. generate template
+           const md = generate(answers);
+           //3. write the file
+             return writeFileAsync("README.md", md);
+        }); 
     })
     .then(function() {
       console.log("Successfully wrote to README.md");
@@ -141,10 +167,3 @@ https://github.com/${answers.gitHubID}
       console.log(err);
     });
 
-    
-
-// function init() {
-
-// }
-
-// init();

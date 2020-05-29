@@ -1,15 +1,15 @@
 
 [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-v2.0%20adopted-ff69b4.svg)](code_of_conduct.md)
-![Badge](https://img.shields.io/badge/ReadMeReadME-1.1-blue)
-# ReadME
+![Badge](https://img.shields.io/badge/ReadMeDemo-undefined-undefined)
+# Demo
 
 ## Description
 
-This is a demo 
+undefined
 
 ## Current Version 
 
-1.1
+undefined
 
 ## Table of Contents
 
@@ -22,11 +22,11 @@ This is a demo
                 
 ## Installation
 
-Install all proper npm items
+npm i
 
 ## Usage
 
-Open Soucre
+open source 
 
 ## License
 
@@ -37,8 +37,10 @@ Public domain
 na
 
 ##Questions
- 
+undefined
 
 ## Contact Information
 
 https://github.com/truittj
+[! gitHub Avatar] (https://avatars1.githubusercontent.com/u/63681296?v=4)
+
