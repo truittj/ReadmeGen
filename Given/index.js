@@ -72,7 +72,6 @@ function userPrompt () {
         }
         ]);
     }
-const { data } = await axios.get (`https://api.github.com/users/${gitHubID}/repos?per_page=100`);
 
 
     function generate (answers) {
