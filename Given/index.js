@@ -64,10 +64,10 @@ function userPrompt () {
             default: " "
         },
         {
-        type: "input",
-        message: "Questions:",
-        name: "questions",
-        default: " "
+            type: "input",
+            message: "Questions:",
+            name: "questions",
+            default: " "
         },
         {
             type: "list",
